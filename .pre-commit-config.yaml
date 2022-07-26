@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/psf/black
-    rev: 21.6.0
+    rev: 22.6.0
     hooks:
     -   id: black
         args: [--safe]
@@ -25,7 +25,7 @@ repos:
     rev: v3.8.2
     hooks:
     -   id: reorder-python-imports
-        args: [--application-directories=.:app, --py36-plus]
+        args: [--application-directories=.src, --py36-plus]
 
 -   repo: https://github.com/asottile/pyupgrade
     rev: v2.37.2
@@ -34,8 +34,8 @@ repos:
         args: [--py36-plus]
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: ''
+    rev: 'v0.971'
     hooks:
     -   id: mypy
-        files: ^app/
+        files: ^src/
         args: []
