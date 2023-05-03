@@ -7,7 +7,6 @@ repos:
     hooks:
     -   id: black
         args: ['-S', '-l 120']
-        language_version: python3.11
 
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -18,13 +17,11 @@ repos:
     -   id: check-added-large-files
     -   id: debug-statements
     -   id: double-quote-string-fixer
-        language_version: python3
 
 -   repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
     -   id: flake8
-        language_version: python3
 
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v3.9.0
