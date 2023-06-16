@@ -1,8 +1,8 @@
-def greet(name: str):
+def greet(name: str) -> None:
     print(f'hello, {name}')
 
 
-def main():
+def main() -> None:
     greet('Evans')
 
 
