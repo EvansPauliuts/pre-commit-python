@@ -1,7 +1,7 @@
-PHONY: pre_commit_run auto_update
+.PHONY: run update
 
-pre_commit_run:
+run:
 	pre-commit run --all-files
 
-auto_update:
+update:
 	pre-commit autoupdate
