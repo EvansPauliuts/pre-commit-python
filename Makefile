@@ -1,7 +1,9 @@
+PRE_COMMIT := pre-commit
+
 .PHONY: run update
 
 run:
-	pre-commit run --all-files
+	$(PRE_COMMIT) run --all-files
 
 update:
-	pre-commit autoupdate
+	$(PRE_COMMIT) autoupdate
